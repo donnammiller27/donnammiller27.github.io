@@ -1,0 +1,24 @@
+$(document).ready(function () {
+		
+$.getJSON('info.json', function (data) {
+infoJSON = data; 
+
+
+
+            <div class="panel-heading">title</div>
+            <div class="panel-body">
+             Panel content
+            </div>
+        </div>     	
+	
+var html = "";	
+for (i = 0; i < infoJSON.info.length; i++) {
+var panelItem = $('<div class="panel panel-success"> <div class="panel-heading">'+
+  infoJSON.info[i].infoTitle+'</div><div class="panel-body">'+
+  infoJSON.info[i].infoParagraph+'</div></div>');
+  html = html+panelItem;
+}  
+}); 
+$('#info').innerhtml = html;
+}
+
