@@ -2,6 +2,10 @@ body {
   background-color: lightgray;
   margin: 0 auto;
 }  
+img {
+  max-width:100%
+}
+
 .background-gray {
    background-color: gray;
 }   
@@ -9,12 +13,16 @@ body {
    background-color: #EAFEEA;
 }
 .padding10 {
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 }
 .footer {  
   background-color: black;
   color: white;
   text-align: center;
   margin: 0 auto;  
-}	  
+}
+.button-panel {
+  width: 100%;
+  text-align: left;
+}  
    

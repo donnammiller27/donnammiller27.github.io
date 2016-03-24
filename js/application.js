@@ -83,10 +83,11 @@ arr[6]={
 
 var html = "";	
 for (var i = 0; i < arr.length; i++) {
-var panelItem = '<div class="panel panel-success padding10"><div class="panel-heading" data-toggle="collapse" data-target="#a' + i + '" class="collapsed" >' +
+var panelItem = '<div class="panel panel-success padding10"><button class="panel-heading button-panel" data-toggle="collapse" data-target="#a' + i + '" class="collapsed" >' +
        arr[i].infoTitle + '<span class="caret"></span>' +
-   '</div><div id=a' + i +' class="panel-body collapse">'+  arr[i].infoParagraph+
+   '</button><div id=a' + i +' class="panel-body collapse">'+  arr[i].infoParagraph+
    '</div></div>';
+   console.log(panelItem);
   html = html+panelItem;  
 }  
 $(this).html(html);	
@@ -127,6 +128,5 @@ $('#sb').loadSb();
 $('#info').loadPanels();		
 
 });
-
 
 
