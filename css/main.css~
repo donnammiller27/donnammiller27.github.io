@@ -1,0 +1,54 @@
+body {
+  background-color: lightgray;
+  margin: 0 auto;
+}  
+
+img {
+  max-width:100%;
+}
+
+.background-lightgray {
+  background-color: lightgray;
+}
+	
+.background-gray {
+   background-color: gray;
+}   
+.background-green {
+   background-color: #EAFEEA;
+}
+.padding10 {
+  padding-bottom: 11px;
+}
+
+.footer {  
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0 auto;  
+}
+.button-panel {
+  width: 100%;
+  text-align: left;  
+} 
+.button-panel:hover {
+  background: green;
+  color:white;
+}  
+
+.btn {
+  border-radius: 25px;
+  background-color: #EAFEEA;
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+} 
+
+.btn:hover {
+  background-color: green;
+  color: white;
+}
+
+   

@@ -2,10 +2,15 @@ body {
   background-color: lightgray;
   margin: 0 auto;
 }  
+
 img {
-  max-width:100%
+  max-width:100%;
 }
 
+.background-lightgray {
+  background-color: lightgray;
+}
+	
 .background-gray {
    background-color: gray;
 }   
@@ -15,6 +20,7 @@ img {
 .padding10 {
   padding-bottom: 11px;
 }
+
 .footer {  
   background-color: black;
   color: white;
@@ -23,6 +29,76 @@ img {
 }
 .button-panel {
   width: 100%;
-  text-align: left;
+  text-align: left;  
+} 
+.button-panel:hover, .button-panel:focus {
+  background: green;
+  color:white;
 }  
-   
+
+.btn {
+  border-radius: 25px;
+  background-color: #EAFEEA;
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+} 
+
+.btn:hover, .btn:focus {
+  background-color: green;
+  color: white;
+}
+
+.box {
+  background: #EAFEAA;
+  border-radius: 6px;
+  text-align: left;
+  box-shadow: 5px 10px 3px #121212;
+  margin-bottom: 10px;
+  -webkit-transition-property: background, border-radius, text-align, box-shadow;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+  transition-property: background, border-radius, text-align, box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+  
+.box:hover, .box:focus {
+  background: #ff7b29;
+  border-radius: 50%;
+  box-shadow: none;
+  text-align: center;    
+}
+  
+h6 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+}	
+  
+#box_2 {  
+  width: 80px;
+  height: 80px;
+  background: #ff7b29;
+  text-align: center;  
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+#box_2:hover, #box_2:focus {
+    width: 300px;
+}
+  
+  
+
