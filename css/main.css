@@ -1,21 +1,33 @@
 body {
-  background-color: lightgray;
   margin: 0 auto;
-}  
+  background-image: url("../images/102d6e8b.png");
+}
+
+ul {
+list-style-type: none;
+font-size: 15px;
+}
 
 img {
   max-width:100%;
 }
 
-.background-lightgray {
-  background-color: lightgray;
+h2 {
+  font-family: cursive;
+  color: lightsteelblue;
+}  
+
+.background-jumbo {
+  background: black;
+  color:lightsteelblue;
 }
-	
-.background-gray {
-   background-color: gray;
+
+.background-black {
+   background-color: black;
 }   
-.background-green {
-   background-color: #EAFEEA;
+.background-gold {
+  background-image: url("../images/102d6e8b.png");
+  border: none;
 }
 .padding10 {
   padding-bottom: 11px;
@@ -32,32 +44,40 @@ img {
   text-align: left;  
 } 
 .button-panel:hover, .button-panel:focus {
-  background: green;
-  color:white;
+  background: blue;
+  color: white;
 }  
 
 .btn {
   border-radius: 25px;
-  background-color: #EAFEEA;
+  background-color: lightsteelblue;
   color: black;
   font-size: 20px;
   margin: 10px;
   width: 200px;
   height: 50px;
+  text-align: center;
 } 
 
 .btn:hover, .btn:focus {
-  background-color: green;
+  background-color: blue;
   color: white;
 }
 
+.panel-color {
+  color: black;
+  background-color: lightsteelblue;
+}  
+
 .box {
-  background: #EAFEAA;
+  background: lightsteelblue;
   border-radius: 6px;
   text-align: left;
+  color: black;
+  padding: 18px;
   box-shadow: 5px 10px 3px #121212;
   margin-bottom: 10px;
-  -webkit-transition-property: background, border-radius, text-align, box-shadow;
+  -webkit-transition-property: background, border-radius, text-align, box-shadow, color;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: linear;
   transition-property: background, border-radius, text-align, box-shadow;
@@ -66,39 +86,16 @@ img {
 }
   
 .box:hover, .box:focus {
-  background: #ff7b29;
-  border-radius: 50%;
+  background: blue;
+  color: white;
+  border-radius: 25%;
   box-shadow: none;
   text-align: center;    
 }
   
-h6 {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: white;
-}	
-  
-#box_2 {  
-  width: 80px;
-  height: 80px;
-  background: #ff7b29;
-  text-align: center;  
-  -webkit-transition-property: width;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-timing-function: linear;
-  -webkit-transition-delay: 1s;
-  transition-property: width;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
-}
-
-#box_2:hover, #box_2:focus {
-    width: 300px;
-}
-  
-  
+ 
+h1 {
+  font-family: cursive;
+  color: lightsteelblue;
+}   
 

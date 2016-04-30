@@ -83,7 +83,7 @@ arr[6]={
 
 var html = "";	
 for (var i = 0; i < arr.length; i++) {
-var panelItem = '<div class="panel panel-success padding10"><button class="panel-heading button-panel" data-toggle="collapse" data-target="#a' + i + '" class="collapsed" >' +
+var panelItem = '<div class="panel panel-color padding10"><button class="panel-heading button-panel panel-color" data-toggle="collapse" data-target="#a' + i + '" class="collapsed" >' +
        arr[i].infoTitle + '<span class="caret"></span>' +
    '</button><div id=a' + i +' class="panel-body collapse">'+  arr[i].infoParagraph+
    '</div></div>';
@@ -126,6 +126,23 @@ $('.ideal-shots').slick({
 $('#sb').loadSb();
 //load collapsible panels
 $('#info').loadPanels();		
+
+  
+$("#readmore").click("on", function() {  
+  $("#showless").addClass("hide");
+  $("#showless").removeClass("show");
+  $("#showmore").removeClass("hide");
+  $("#showmore").addClass("show");
+});  
+
+$("#readless").click("on", function() {  
+  $("#showless").removeClass("hide");
+  $("#showless").addClass("show");
+  $("#showmore").removeClass("show");
+  $("#showmore").addClass("hide");
+
+});  
+
 
 });
 
