@@ -97,5 +97,37 @@ h2 {
 h1 {
   font-family: cursive;
   color: lightsteelblue;
-}   
+}  
+
+#showmore {
+  margin-left:20%;
+  text-align: left;
+}  
+
+div#readless {
+    margin-left: 20%;
+}
+
+
+@media screen and (max-width: 768px) {
+  #showmore {
+    margin-left:5%;
+    text-align: left;
+  }	
+
+  div#readless {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #showmore {
+    margin-left:30%;
+    text-align: left;
+  }	
+
+  div#readless {
+    margin-left: 20%;
+  }
+}
 
