@@ -1,0 +1,50 @@
+//create a car
+function Car(color) {
+  this.color = color || black;
+}
+
+Car.prototype.honk = function() {
+  this.honking = true;
+  set Timeout(function() {
+    this.honking = false;
+    }.bind(this), 1000);
+};
+
+Car.prototype.run = function () {
+  this.running = true;
+}
+
+
+var blueCar = new Car('blue');
+var blackCar = new Car();
+
+
+
+var colors ['blue', 'black', red']
+var cars = colors.map(buildCar);
+
+var buildCar = function(color) {
+  return new Car(color);
+}  
+
+for (i=0; i< colors.length; i++) {
+  cars[i] = new Car(colors[i]);
+}  
+
+cars[0].run = cars[0].run;
+var oldRun = Car.prototype.run;
+
+Car.prototype.run = function() {
+  console.log("The " + this.color + " car" is now running");
+  return oldRun.apply(this, arguments);
+};
+
+var truck = {
+  turnlightsOn: function() {
+    this.lightsOn=true;
+  };
+}
+
+truck.turnOnLights.call(cars[0]);
+
+  
