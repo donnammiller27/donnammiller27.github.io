@@ -5,7 +5,7 @@
 var sbarr = [];
 sbarr[0] = {
 "sbTitle": "WEB TECHNOLOGIES",
-"sbList":"JavaScript, JQuery, Bootstrap, HTML, CSS,  Ruby on Rails"
+"sbList":"JavaScript, JQuery, Bootstrap, HTML5, CSS3,  Ruby on Rails"
 }
 sbarr[1] = {
 "sbTitle":"SCRIPTING LANGUAGES",
@@ -71,14 +71,14 @@ parr[5]={
 }	
 
 parr[6]={
-"infoTitle":"COMMUNITY",
+"infoTitle":"COMMUNITY SERVICE",
 "infoParagraph":"Director of Boys' Tee Ball at Calvary Athletic Association, Philadelphia, PA. since 2005."
 }
 
 
 //return text to load side bar info
 var sideHtml = function() {
-  str = "";	
+  var str = "";	
   for (var i = 0; i < sbarr.length; i++) {
     var sbItem = '<li><b>' + sbarr[i].sbTitle + '</b></li><li>' + sbarr[i].sbList + '</li><br>';
     str += sbItem;
@@ -103,35 +103,15 @@ var panelHtml = function(){
 
 //document ready function
 $(document).ready(function () {
-
-//call to slick carousel jquery plugin written by Ken Wheeler
-  $('.ideal-shots').slick({
-    centerMode: true,
-    centerPadding: '30px',
-    slidesToShow: 2,  
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '0px',
-          slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '0px',
-          slidesToShow: 1
-        }
-      }
-    ]		
-  });
-
-
+	
+//add touch events of swiperight and swipeleft to carousel		
+ $("#myCarousel").swiperight(function() {  
+    $("#myCarousel").carousel('prev');  
+ });  
+ $("#myCarousel").swipeleft(function() {  
+    $("#myCarousel").carousel('next');  
+ });
+   
 //load sidebar
   $('#sb').html(sideHtml());
 
@@ -151,8 +131,9 @@ $(document).ready(function () {
     $("#showless").removeClass("hide");
     $("#showless").addClass("show");
     $("#showmore").removeClass("show");
-    $("#showmore").addClass("hide");
-  });  
+    $("#showmore").addClass("hide");   
+  }); 
+  
 
 });
 //end document ready
