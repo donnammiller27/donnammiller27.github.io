@@ -24,7 +24,9 @@ h2 {
 
 
 #experience h2 {
-  padding: 3%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+
 }
 
 #experience p {
@@ -149,7 +151,8 @@ div#readless {
 
 
 #experience h2 {
-  padding: 12%;
+  padding-top: 12%;
+  padding-bottom: 2%;
 }
 
   
